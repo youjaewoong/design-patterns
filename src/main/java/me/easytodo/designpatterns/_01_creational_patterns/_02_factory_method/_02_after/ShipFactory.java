@@ -10,8 +10,10 @@ public interface ShipFactory {
         return ship;
     }
 
+    //이메일전송 interface
     void sendEmailTo(String email, Ship ship);
-
+    
+    //생성 interface
     Ship createShip();
 
     private void validate(String name, String email) {

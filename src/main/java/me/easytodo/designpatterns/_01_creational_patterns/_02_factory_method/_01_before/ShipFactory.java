@@ -17,15 +17,15 @@ public class ShipFactory {
         ship.setName(name);
 
         // Customizing for specific name
-        if (name.equalsIgnoreCase("easytodo")) {
+        if (name.equalsIgnoreCase("whiteship")) {
             ship.setLogo("\uD83D\uDEE5️");
         } else if (name.equalsIgnoreCase("blackship")) {
             ship.setLogo("⚓");
         }
 
         // coloring
-        if (name.equalsIgnoreCase("easytodo")) {
-            ship.setColor("easytodo");
+        if (name.equalsIgnoreCase("whiteship")) {
+            ship.setColor("white");
         } else if (name.equalsIgnoreCase("blackship")) {
             ship.setColor("black");
         }
