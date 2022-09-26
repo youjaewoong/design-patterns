@@ -7,15 +7,15 @@ public class TourPlan {
 
     private String title;
 
-    private int nights;
+    private int nights; //2박
 
-    private int days;
+    private int days; //3일
 
     private LocalDate startDate;
 
-    private String whereToStay;
+    private String whereToStay; //어디서머무는지
 
-    private List<DetailPlan> plans;
+    private List<DetailPlan> plans; //구체적인 plane
 
     public TourPlan() {
     }

@@ -7,6 +7,9 @@ import java.util.List;
 import me.easytodo.designpatterns._01_creational_patterns._04_builder._01_before.DetailPlan;
 import me.easytodo.designpatterns._01_creational_patterns._04_builder._01_before.TourPlan;
 
+/**
+ * 빌더를 제공하는 구현체
+ */
 public class DefaultTourBuilder implements TourPlanBuilder {
 
     private String title;
