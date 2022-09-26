@@ -3,7 +3,7 @@ package me.easytodo.designpatterns._01_creational_patterns._03_abstract_factory.
 import me.easytodo.designpatterns._01_creational_patterns._03_abstract_factory._01_before.WhiteAnchor;
 import me.easytodo.designpatterns._01_creational_patterns._03_abstract_factory._01_before.WhiteWheel;
 
-public class EasytodoPartsFactory implements ShipPartsFactory {
+public class WhiteShipPartsFactory implements ShipPartsFactory {
 
     @Override
     public Anchor createAnchor() {

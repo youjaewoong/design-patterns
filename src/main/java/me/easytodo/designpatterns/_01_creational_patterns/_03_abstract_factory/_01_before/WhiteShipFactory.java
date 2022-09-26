@@ -4,7 +4,7 @@ import me.easytodo.designpatterns._01_creational_patterns._02_factory_method._02
 import me.easytodo.designpatterns._01_creational_patterns._02_factory_method._02_after.WhiteShip;
 import me.easytodo.designpatterns._01_creational_patterns._02_factory_method._02_after.Ship;
 
-public class EasytodoFactory extends DefaultShipFactory {
+public class WhiteShipFactory extends DefaultShipFactory {
 
     @Override
     public Ship createShip() {
