@@ -3,6 +3,9 @@ package me.easytodo.designpatterns._01_creational_patterns._02_factory_method._0
 import java.util.Calendar;
 import java.util.Locale;
 
+/**
+ * SimpleFactory Partten
+ */
 public class CalendarExample {
 
     public static void main(String[] args) {

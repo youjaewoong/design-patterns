@@ -51,7 +51,9 @@ public class GithubIssue implements Cloneable {
         githubIssue.setId(this.id);
         githubIssue.setTitle(this.title);
 
-        return githubIssue;
+        return githubIssue; //deep copy
+        
+        //return super.clone(); //shallow copy
     }
 
     @Override

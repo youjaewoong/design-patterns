@@ -7,6 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class SpringBeanFactoryExample {
 
     public static void main(String[] args) {
+    	//xml 기반 설정파일 bean call
         BeanFactory xmlFactory = new ClassPathXmlApplicationContext("config.xml");
         String hello = xmlFactory.getBean("hello", String.class);
         System.out.println(hello);
