@@ -7,6 +7,7 @@ public class JdbcExample {
     public static void main(String[] args) throws ClassNotFoundException {
         Class.forName ("org.h2.Driver");
 
+        //새로운 Driver가 만들어진다고해도 기본 골격은 바뀌지않는다.
         try (Connection conn = DriverManager.getConnection ("jdbc:h2:mem:~/test", "sa","")) {
 
             String sql =  "CREATE TABLE  ACCOUNT " +
