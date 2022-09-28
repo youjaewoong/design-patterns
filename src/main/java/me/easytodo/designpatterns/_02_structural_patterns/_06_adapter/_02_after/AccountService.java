@@ -1,5 +1,6 @@
 package me.easytodo.designpatterns._02_structural_patterns._06_adapter._02_after;
 
+//adaptee에 해당하는 class
 public class AccountService {
 
     public Account findAccountByUsername(String username) {

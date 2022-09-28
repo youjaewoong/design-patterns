@@ -7,8 +7,13 @@ public class AdapterInJava {
 
     public static void main(String[] args) {
         // collections
-        List<String> strings = Arrays.asList("a", "b", "c");
+        List<String> strings = Arrays.asList("a", "b", "c"); //배열을 list로 변경하는 가변인자
+        
+        // strings -> adaptee
+        // Collections.list -> adapter
+        // ArrayList<String> -> target
         Enumeration<String> enumeration = Collections.enumeration(strings);
+        
         ArrayList<String> list = Collections.list(enumeration);
 
         // io

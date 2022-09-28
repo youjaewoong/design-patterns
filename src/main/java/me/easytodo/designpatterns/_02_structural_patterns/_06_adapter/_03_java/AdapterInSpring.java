@@ -7,7 +7,10 @@ import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandl
 public class AdapterInSpring {
 
     public static void main(String[] args) {
-        DispatcherServlet dispatcherServlet = new DispatcherServlet();
+        
+    	DispatcherServlet dispatcherServlet = new DispatcherServlet();
+        
+        
         HandlerAdapter handlerAdapter = new RequestMappingHandlerAdapter();
     }
 }

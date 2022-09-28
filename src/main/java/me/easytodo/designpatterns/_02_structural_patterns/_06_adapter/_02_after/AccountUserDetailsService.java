@@ -5,6 +5,7 @@ import me.easytodo.designpatterns._02_structural_patterns._06_adapter._02_after.
 
 public class AccountUserDetailsService implements UserDetailsService {
 
+	//adaptee에 해당하는 class
     private AccountService accountService;
 
     public AccountUserDetailsService(AccountService accountService) {
