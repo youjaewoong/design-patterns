@@ -4,6 +4,7 @@ public class Character implements Component {
 
     private Bag bag;
 
+    //leaf
     @Override
     public int getPrice() {
         return bag.getPrice();

@@ -11,6 +11,7 @@ public class Item implements Component {
         this.price = price;
     }
 
+    //leaf
     @Override
     public int getPrice() {
         return this.price;
