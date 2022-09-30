@@ -13,11 +13,12 @@ public class DecoratorInJava {
         ArrayList list = new ArrayList<>();
         list.add(new Book());
 
+        //book만 받을수 있도록 변경함
         List books = Collections.checkedList(list, Book.class);
 
 
 //        books.add(new Item());
-
+        //불변객체로 변경 Wrapper 를 사용한 unmodifiableList
         List unmodifiableList = Collections.unmodifiableList(list);
         list.add(new Item());
         unmodifiableList.add(new Book());
