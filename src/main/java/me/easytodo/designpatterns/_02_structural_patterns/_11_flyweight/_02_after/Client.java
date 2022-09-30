@@ -1,5 +1,12 @@
 package me.easytodo.designpatterns._02_structural_patterns._11_flyweight._02_after;
 
+/**
+ * 객체를 가볍게 만들어 메모리 사용을 줄이는 패턴.
+ * 장점
+ * - 애플리케이션에서 사용하는 메모리를 줄일 수 있다.
+ * 단점
+ * - 코드의 복잡도가 증가한다.
+ */
 public class Client {
 
     public static void main(String[] args) {
