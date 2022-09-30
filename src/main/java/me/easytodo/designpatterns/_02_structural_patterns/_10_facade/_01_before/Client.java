@@ -19,7 +19,8 @@ public class Client {
         properties.setProperty("mail.smtp.host", host);
 
         Session session = Session.getDefaultInstance(properties);
-
+        
+        //의존성이 많음
         try {
             MimeMessage message = new MimeMessage(session);
             message.setFrom(new InternetAddress(from));
