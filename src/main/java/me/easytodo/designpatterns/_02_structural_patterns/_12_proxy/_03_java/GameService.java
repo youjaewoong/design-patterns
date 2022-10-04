@@ -1,8 +1,6 @@
 package me.easytodo.designpatterns._02_structural_patterns._12_proxy._03_java;
 
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class GameService {

@@ -1,5 +1,6 @@
 package me.easytodo.designpatterns._02_structural_patterns._12_proxy._02_after;
 
+//real sevice
 public class DefaultGameService implements GameService {
 
     @Override
