@@ -1,7 +1,6 @@
 package me.easytodo.designpatterns._03_behavioral_patterns._14_command._02_after;
 
 import me.easytodo.designpatterns._03_behavioral_patterns._14_command._01_before.Game;
-import me.easytodo.designpatterns._03_behavioral_patterns._14_command._01_before.Light;
 
 public class GameStartCommand implements Command {
 

@@ -11,7 +11,14 @@ public class CommandInJava {
     public static void main(String[] args) {
         Light light = new Light();
         Game game = new Game();
+        //threadPool 4개를 사용한 비동기 처리
         ExecutorService executorService = Executors.newFixedThreadPool(4);
+//        executorService.submit(new Runnable() {
+//			@Override
+//			public void run() {
+//				light.on();
+//			}
+//		});
         executorService.submit(light::on);
         executorService.submit(game::start);
         executorService.submit(game::end);

@@ -1,17 +1,14 @@
 package me.easytodo.designpatterns._03_behavioral_patterns._14_command._03_java;
 
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
-import org.springframework.jdbc.core.namedparam.SqlParameterSource;
-import org.springframework.jdbc.core.simple.SimpleJdbcCall;
-import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
-
-import me.easytodo.designpatterns._03_behavioral_patterns._14_command._02_after.Command;
-
-import javax.sql.DataSource;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
+
+import javax.sql.DataSource;
+
+import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
+
+import me.easytodo.designpatterns._03_behavioral_patterns._14_command._02_after.Command;
 
 public class CommandInSpring {
 
