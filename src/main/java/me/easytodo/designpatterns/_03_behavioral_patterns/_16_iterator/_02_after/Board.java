@@ -18,6 +18,7 @@ public class Board {
         this.posts.add(new Post(content));
     }
 
+    //create
     public Iterator<Post> getRecentPostIterator() {
         return new RecentPostIterator(this.posts);
     }

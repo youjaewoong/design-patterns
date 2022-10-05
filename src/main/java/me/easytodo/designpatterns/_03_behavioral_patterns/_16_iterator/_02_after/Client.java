@@ -5,16 +5,38 @@ import java.util.List;
 
 import me.easytodo.designpatterns._03_behavioral_patterns._16_iterator._01_before.Post;
 
+/**
+ * 집합 객체 내부 구조를 노출시키지 않고 순회 하는 방법을 제공하는 패턴
+ * 집합 객체를 순회하는 클라이언트 코드를 변경하지 않고 다양한 순회 방법을 제공할 수 있다.
+ * 
+ * 장점
+ * - 집합 객체가 가지고 있는 객체들에 손쉽게 접근할 수 있다.
+ * - 일관된 인터페이스를 사용해 여러 형태의 집합 구조를 순회할 수 있다.
+ * 단점
+ * - 클래스가 늘어나고 복잡도가 증가한다.
+ * 
+ * 자바
+ * - java.util.Enumeration과 java.util.Iterator
+ * - Java StAX (Streaming API for XML)의 Iterator 기반 API
+ * - XmlEventReader, XmlEventWriter
+ * 스프링
+ * - CompositeIterator
+ * 
+ * Board vo에서 list 맴버변수를 RecentPostIterator로 보내 내부구조를 노출시키지 않게한다.
+ * RecentPostIterator list로 처리 할수 있는 interator interface
+ */
 public class Client {
 
     public static void main(String[] args) {
         Board board = new Board();
-        board.addPost("디자인 패턴 게임");
-        board.addPost("선생님, 저랑 디자인 패턴 하나 학습하시겠습니까?");
-        board.addPost("지금 이 자리에 계신 여러분들은 모두 디자인 패턴을 학습하고 계신 분들입니다.");
+        board.addPost("start game");
+        board.addPost("would you Iterator pattern learning ??");
+        board.addPost("yes");
 
-        // TODO 들어간 순서대로 순회하기
+        // TODO 들어간 순서대로 순회
         List<Post> posts = board.getPosts();
+        
+        // 1. 내부 구조를 노출시키지않는 Iterator
         Iterator<Post> iterator = posts.iterator();
         System.out.println(iterator.getClass());
 
@@ -23,7 +45,7 @@ public class Client {
             System.out.println(post.getTitle());
         }
 
-        // TODO 가장 최신 글 먼저 순회하기
+        // 2. TODO 가장 최신 글 먼저 순회하기
         Iterator<Post> recentPostIterator = board.getRecentPostIterator();
         while(recentPostIterator.hasNext()) {
             System.out.println(recentPostIterator.next().getTitle());
