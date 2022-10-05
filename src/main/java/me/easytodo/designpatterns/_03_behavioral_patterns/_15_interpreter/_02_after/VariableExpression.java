@@ -2,6 +2,7 @@ package me.easytodo.designpatterns._03_behavioral_patterns._15_interpreter._02_a
 
 import java.util.Map;
 
+//터미널
 public class VariableExpression implements PostfixExpression {
 
     private Character character;

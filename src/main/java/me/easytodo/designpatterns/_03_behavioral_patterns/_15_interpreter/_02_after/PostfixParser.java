@@ -1,7 +1,5 @@
 package me.easytodo.designpatterns._03_behavioral_patterns._15_interpreter._02_after;
 
-import static me.easytodo.designpatterns._03_behavioral_patterns._15_interpreter._02_after.PostfixExpression.*;
-
 import java.util.Stack;
 
 public class PostfixParser {
