@@ -3,7 +3,6 @@ package me.easytodo.designpatterns._03_behavioral_patterns._17_mediator._01_befo
 public class Guest {
 
     private Restaurant restaurant = new Restaurant();
-
     private CleaningService cleaningService = new CleaningService();
 
     public void dinner() {
