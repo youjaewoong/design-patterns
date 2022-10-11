@@ -7,6 +7,7 @@ public class Client {
         game.setRedTeamScore(10);
         game.setBlueTeamScore(20);
 
+        //클라이언트가 이런 정보를 알고있어야할까?
         int blueTeamScore = game.getBlueTeamScore();
         int redTeamScore = game.getRedTeamScore();
 

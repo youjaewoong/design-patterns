@@ -1,5 +1,6 @@
 package me.easytodo.designpatterns._03_behavioral_patterns._19_observer._02_after;
 
+//concrrent observer
 public class User implements Subscriber {
 
     private String name;

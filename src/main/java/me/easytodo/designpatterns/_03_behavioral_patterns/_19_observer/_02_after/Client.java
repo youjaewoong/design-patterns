@@ -4,7 +4,7 @@ public class Client {
 
     public static void main(String[] args) {
         ChatServer chatServer = new ChatServer();
-        User user1 = new User("keesun");
+        User user1 = new User("jaeWoong");
         User user2 = new User("easytodo");
 
         chatServer.register("오징어게임", user1);

@@ -1,5 +1,6 @@
 package me.easytodo.designpatterns._03_behavioral_patterns._18_memento._02_after;
 
+//memmento
 public final class GameSave {
 
     private final int blueTeamScore;

@@ -22,10 +22,12 @@ public class Game {
         this.blueTeamScore = blueTeamScore;
     }
 
+    //memento에 저장기능
     public GameSave save() {
         return new GameSave(this.blueTeamScore, this.redTeamScore);
     }
 
+    //복원기능
     public void restore(GameSave gameSave) {
         this.blueTeamScore = gameSave.getBlueTeamScore();
         this.redTeamScore = gameSave.getRedTeamScore();

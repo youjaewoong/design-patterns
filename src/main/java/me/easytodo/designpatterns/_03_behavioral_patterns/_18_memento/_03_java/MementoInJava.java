@@ -12,7 +12,7 @@ public class MementoInJava {
         game.setRedTeamScore(10);
         game.setBlueTeamScore(20);
 
-        // TODO 직렬화
+        // TODO 직렬화 바이트스트림으로 변경해주는 작업
         try(FileOutputStream fileOut = new FileOutputStream("GameSave.hex");
         ObjectOutputStream out = new ObjectOutputStream(fileOut))
         {
