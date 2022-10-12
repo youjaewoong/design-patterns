@@ -2,6 +2,7 @@ package me.easytodo.designpatterns._03_behavioral_patterns._20_state._02_after;
 
 public class Draft implements State {
 
+	//context
     private OnlineCourse onlineCourse;
 
     public Draft(OnlineCourse onlineCourse) {
@@ -16,6 +17,8 @@ public class Draft implements State {
     @Override
     public void addStudent(Student student) {
         this.onlineCourse.getStudents().add(student);
+        
+        // 학생수가 2명이상이면 상태변경
         if (this.onlineCourse.getStudents().size() > 1) {
             this.onlineCourse.changeState(new Private(this.onlineCourse));
         }
