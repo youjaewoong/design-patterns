@@ -12,11 +12,14 @@ public class FileProcessor {
     }
 
     public int process() {
+    	// close를 해주지 않아도 자동 close 해준다. try (...)
         try(BufferedReader reader = new BufferedReader(new FileReader(path))) {
             int result = 0;
             String line = null;
             while((line = reader.readLine()) != null) {
-                result += Integer.parseInt(line);
+            	// Integer.valueOf 는 Integer return
+            	// Integer.parseInt 는 Int return
+                result += Integer.parseInt(line );
             }
             return result;
         } catch (IOException e) {
