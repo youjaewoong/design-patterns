@@ -5,9 +5,13 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Component;
 
+/**
+ * spring application 실행 시 자동 실행
+ */
 @Component
 public class MyRunner implements ApplicationRunner {
 
+	// 발행자
     private ApplicationEventPublisher publisher;
 
     public MyRunner(ApplicationEventPublisher publisher) {
@@ -16,6 +20,8 @@ public class MyRunner implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        publisher.publishEvent(new MyEvent("hello spring event"));
+      
+    	// 이벤트 발생
+    	publisher.publishEvent(new MyEvent("hello spring event"));
     }
 }

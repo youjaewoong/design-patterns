@@ -7,7 +7,13 @@ import org.springframework.stereotype.Component;
 public class MyEventListener {
 
     @EventListener(MyEvent.class)
-    public void onApplicationEvent(MyEvent event) {
-        System.out.println(event.getMessage());
+    public void onApplicationEvent1(MyEvent event) {
+        System.out.println("첫번째 ::" + event.getMessage());
+    }
+    
+    
+    @EventListener(MyEvent.class)
+    public void onApplicationEvent2(MyEvent event) {
+        System.out.println("두번째 ::" + event.getMessage());
     }
 }
